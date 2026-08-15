@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pure Relative Structured Matrix Learning with Square-Root Matvecs</title>
+<meta name="citation_title" content="Pure Relative Structured Matrix Learning with Square-Root Matvecs">
+<meta name="citation_author" content="Pahan Dewasurendra">
+<meta name="citation_author_institution" content="Johns Hopkins University">
+<meta name="citation_publication_date" content="2026/07/30">
+<meta name="citation_online_date" content="2026/07/30">
+<meta name="citation_pdf_url" content="https://andotheror.github.io/pdf/pure-relative-structured-matrix-learning-with-square-root-matvecs.pdf">
+<meta name="citation_abstract_html_url" content="https://andotheror.github.io/p/pure-relative-structured-matrix-learning-with-square-root-matvecs.html">
+<meta name="citation_technical_report_institution" content="Johns Hopkins University">
+<meta name="description" content="Let $\mathcal L\subseteq\mathbb R^{n\times m}$ be any known $q$-dimensional linear matrix family, and let an unknown $A$ be accessible only through products $Ax$ and $A^\top y$. A recent result obtains a nearly optimal approximation from $\mathcal L$ in about $\sqrt q$ queries, but incurs factor thr">
+<meta name="citation_keywords" content="matrix-vector queries;relative error approximation;structured matrices; query complexity;randomized linear algebra;spectral estimation">
+<script>window.MathJax={tex:{inlineMath:[["$","$"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>body{max-width:52em;margin:2.5em auto;padding:0 1.2em;
+font:16px/1.65 Georgia,'Times New Roman',serif;color:#1a1a1a;background:#fff}
+h1{font-size:1.7em;margin-bottom:.15em}h2{font-size:1.12em;margin:2em 0 .3em}
+a{color:#0b4fa0}.sub{color:#555;font-size:.95em;margin-top:0}
+.abs{color:#222;margin:.4em 0 .5em}.meta{font-size:.9em;color:#555}
+.kw{font-size:.88em;color:#444;font-style:italic}
+ol{padding-left:1.4em}li{margin-bottom:1.9em}
+hr{border:0;border-top:1px solid #ddd;margin:2.2em 0}
+code{background:#f4f4f4;padding:.1em .3em}</style></head><body>
+<p class="meta"><a href="https://andotheror.github.io/">&larr; All papers</a></p>
+<h1>Pure Relative Structured Matrix Learning with Square-Root Matvecs</h1>
+<p class="sub">Pahan Dewasurendra, Johns Hopkins University</p>
+<h2>Abstract</h2>
+<p class="abs">Let $\mathcal L\subseteq\mathbb R^{n\times m}$ be any known $q$-dimensional linear matrix family, and let an unknown $A$ be accessible only through products $Ax$ and $A^\top y$. A recent result obtains a nearly optimal approximation from $\mathcal L$ in about $\sqrt q$ queries, but incurs factor three and additive error proportional to $\|A\|_F$. Whether sublinear query complexity can give pure $(1+\epsilon)$ relative error was left open. We resolve this problem with a polynomial-time, nonadaptive algorithm. For a Frobenius-orthonormal basis $B_1,\ldots,B_q$, form the basis-invariant partial trace $S_L=\sum_iB_iB_i^\top$. The algorithm queries the leading eigenspace of $S_L$ exactly from the left, then fits the remaining directions from a Gaussian right sketch. If $\lambda_j$ are the eigenvalues of $S_L$, its constant-success query complexity is $\min_s\left\{s+C\left[ \max\{1,\lambda_{s+1}\}\log^2(2q) +\lambda_{s+1}/\epsilon \right]\right\}.$ The transposed profile is also available. Since $\lambda_{s+1}\le q/(s+1)$, every family admits pure relative error with $\widetilde O(\sqrt{q/\epsilon})$ queries, independent of ambient dimensions and $\|A\|_F/OPT$. The key proof is a partial-trace covariance lemma for a Gaussian matrix-valued design. Exact high-leverage queries make its expected Hessian the identity, while the centered regression offset has variance only $O(\lambda_{s+1}OPT^2/k)$. A median construction amplifies success without estimating residual norms. Finally, a symmetric Wishart lower bound for fixed-sparsity approximation yields $\Omega(\sqrt{q/\epsilon})$ adaptive two-sided queries when $q\epsilon$ is bounded below. Thus the universal rate is optimal up to logarithmic factors in this joint regime. We also show that the transformed profile gives pure relative reducible prediction risk under known input and output covariances. For structured positive-definite precisions, it further controls Gaussian KL error and preconditioned condition number.</p>
+<p class="kw">Keywords: matrix-vector queries; relative error approximation; structured matrices;  query complexity; randomized linear algebra; spectral estimation</p>
+<p class="meta"><a href="https://andotheror.github.io/pdf/pure-relative-structured-matrix-learning-with-square-root-matvecs.pdf">Full text (PDF)</a> &middot; <a href="https://github.com/andotheror/matvec-structured-matrix-approx">source repository</a> &middot; <a href="https://doi.org/10.5281/zenodo.21698599">doi:10.5281/zenodo.21698599</a></p>
+</body></html>

@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fast Swap-Agnostic Regression</title>
+<meta name="citation_title" content="Fast Swap-Agnostic Regression">
+<meta name="citation_author" content="Pahan Dewasurendra">
+<meta name="citation_author_institution" content="Johns Hopkins University">
+<meta name="citation_publication_date" content="2026/08/04">
+<meta name="citation_online_date" content="2026/08/04">
+<meta name="citation_pdf_url" content="https://andotheror.github.io/pdf/fast-swap-agnostic-regression.pdf">
+<meta name="citation_abstract_html_url" content="https://andotheror.github.io/p/fast-swap-agnostic-regression.html">
+<meta name="citation_technical_report_institution" content="Johns Hopkins University">
+<meta name="description" content="Swap-agnostic learning compares a forecaster with a different hypothesis on each level set of its predictions. A recent finite-class second-order approachability algorithm attains the sharp $\widetilde O(T^{1/3})$ time exponent. Extending it to infinite classes and optimizing its offset with an orac">
+<meta name="citation_keywords" content="swap regret;agnostic learning;regression;omniprediction;proper losses; calibration">
+<script>window.MathJax={tex:{inlineMath:[["$","$"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>body{max-width:52em;margin:2.5em auto;padding:0 1.2em;
+font:16px/1.65 Georgia,'Times New Roman',serif;color:#1a1a1a;background:#fff}
+h1{font-size:1.7em;margin-bottom:.15em}h2{font-size:1.12em;margin:2em 0 .3em}
+a{color:#0b4fa0}.sub{color:#555;font-size:.95em;margin-top:0}
+.abs{color:#222;margin:.4em 0 .5em}.meta{font-size:.9em;color:#555}
+.kw{font-size:.88em;color:#444;font-style:italic}
+ol{padding-left:1.4em}li{margin-bottom:1.9em}
+hr{border:0;border-top:1px solid #ddd;margin:2.2em 0}
+code{background:#f4f4f4;padding:.1em .3em}</style></head><body>
+<p class="meta"><a href="https://andotheror.github.io/">&larr; All papers</a></p>
+<h1>Fast Swap-Agnostic Regression</h1>
+<p class="sub">Pahan Dewasurendra, Johns Hopkins University</p>
+<h2>Abstract</h2>
+<p class="abs">Swap-agnostic learning compares a forecaster with a different hypothesis on each level set of its predictions. A recent finite-class second-order approachability algorithm attains the sharp $\widetilde O(T^{1/3})$ time exponent. Extending it to infinite classes and optimizing its offset with an oracle were left open. We give a black-box reduction to online square-loss regression. The algorithm maintains one regressor per prediction bucket, locates an adjacent sign crossing with logarithmically many oracle queries, and updates only the sampled bucket. A square-loss identity preserves the comparator&#x27;s negative quadratic activity. This yields, for any base regret $R$, $\operatorname{SwapReg}_T=O \left(NR(T/N)+T/N^2\right)$ up to loss and confidence factors. Logarithmic-regret regression therefore retains the $T^{1/3}$ exponent for infinite classes. For half-Brier loss and bounded $d$-parameter linear predictors, constrained Online Newton Step gives $\widetilde O(T^{1/3}d^{2/3})$ contextual swap regret. A direct sum of recalibration instances gives a matching $\Omega(T^{1/3}d^{2/3})$ lower bound for a fixed class of pseudodimension $d$. Kernel ridge regression further gives a spectrum-adaptive log-determinant bound for bounded RKHS predictors. For every sequential-entropy exponent $p&gt;0$, fixed convex classes prove that both nonparametric rates are minimax optimal up to logarithmic factors. We also obtain fast canonical-link models and an oracle-efficient offline conversion with excess $\widetilde O((d/m)^{2/3})$.</p>
+<p class="kw">Keywords: swap regret; agnostic learning; regression; omniprediction; proper losses;  calibration</p>
+<p class="meta"><a href="https://andotheror.github.io/pdf/fast-swap-agnostic-regression.pdf">Full text (PDF)</a> &middot; <a href="https://github.com/andotheror/fast-swap-agnostic-regression">source repository</a> &middot; <a href="https://doi.org/10.5281/zenodo.21782469">doi:10.5281/zenodo.21782469</a></p>
+</body></html>

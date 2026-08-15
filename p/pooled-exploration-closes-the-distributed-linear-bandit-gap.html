@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pooled Exploration Closes the Distributed Linear-Bandit Gap</title>
+<meta name="citation_title" content="Pooled Exploration Closes the Distributed Linear-Bandit Gap">
+<meta name="citation_author" content="Pahan Dewasurendra">
+<meta name="citation_author_institution" content="Johns Hopkins University">
+<meta name="citation_publication_date" content="2026/07/30">
+<meta name="citation_online_date" content="2026/07/30">
+<meta name="citation_pdf_url" content="https://andotheror.github.io/pdf/pooled-exploration-closes-the-distributed-linear-bandit-gap.pdf">
+<meta name="citation_abstract_html_url" content="https://andotheror.github.io/p/pooled-exploration-closes-the-distributed-linear-bandit-gap.html">
+<meta name="citation_technical_report_institution" content="Johns Hopkins University">
+<meta name="description" content="Distributed adversarial linear bandits have two sources of difficulty. A network needs time to mix information, while bandit feedback needs enough collective exploration to identify a $d$-dimensional loss. The best known finite-action guarantee multiplies both costs by $d$. Its lower bound only mult">
+<meta name="citation_keywords" content="linear bandits;distributed learning;exploration;regret; collaborative bandits;communication">
+<script>window.MathJax={tex:{inlineMath:[["$","$"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>body{max-width:52em;margin:2.5em auto;padding:0 1.2em;
+font:16px/1.65 Georgia,'Times New Roman',serif;color:#1a1a1a;background:#fff}
+h1{font-size:1.7em;margin-bottom:.15em}h2{font-size:1.12em;margin:2em 0 .3em}
+a{color:#0b4fa0}.sub{color:#555;font-size:.95em;margin-top:0}
+.abs{color:#222;margin:.4em 0 .5em}.meta{font-size:.9em;color:#555}
+.kw{font-size:.88em;color:#444;font-style:italic}
+ol{padding-left:1.4em}li{margin-bottom:1.9em}
+hr{border:0;border-top:1px solid #ddd;margin:2.2em 0}
+code{background:#f4f4f4;padding:.1em .3em}</style></head><body>
+<p class="meta"><a href="https://andotheror.github.io/">&larr; All papers</a></p>
+<h1>Pooled Exploration Closes the Distributed Linear-Bandit Gap</h1>
+<p class="sub">Pahan Dewasurendra, Johns Hopkins University</p>
+<h2>Abstract</h2>
+<p class="abs">Distributed adversarial linear bandits have two sources of difficulty. A network needs time to mix information, while bandit feedback needs enough collective exploration to identify a $d$-dimensional loss. The best known finite-action guarantee multiplies both costs by $d$. Its lower bound only multiplies the bandit cost by $d$, leaving a factor $\sqrt d$ gap in the communication term. We close this gap. The key is that exploration should stabilize the pooled block estimate, not every local estimate separately. An exponential-potential argument with conditional Bernstein control allows a spanner exploration rate of order $\eta d/N$ across $N$ agents. The previous pointwise analysis requires order $\eta Bd$, where $B$ is the communication block length. A separate leverage lemma shows that the tiny uniform floor already present in the algorithm keeps every communicated spanner coordinate polynomially bounded, so reducing exploration does not weaken gossip. For $K$ actions spanning dimension $r\le d$, spectral gap $\rho$, and horizon $T$, our algorithm communicates $O(r)$ scalars per agent and round and has per-agent regret $\widetilde O \left( \sqrt{\bigl(\rho^{-1/2}+r/N\bigr)T\log K} \right).$ This matches the known lower bound up to logarithmic factors and resolves the finite-action linear-bandit gap. The proof also gives a general mini-batch EXP2 theorem showing that independent agents pool both variance and the exploration needed for exponential stability.</p>
+<p class="kw">Keywords: linear bandits; distributed learning; exploration; regret;  collaborative bandits; communication</p>
+<p class="meta"><a href="https://andotheror.github.io/pdf/pooled-exploration-closes-the-distributed-linear-bandit-gap.pdf">Full text (PDF)</a> &middot; <a href="https://github.com/andotheror/distributed-linear-bandit-gap">source repository</a> &middot; <a href="https://doi.org/10.5281/zenodo.21698612">doi:10.5281/zenodo.21698612</a></p>
+</body></html>

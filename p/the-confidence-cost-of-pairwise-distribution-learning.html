@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Confidence Cost of Pairwise Distribution Learning</title>
+<meta name="citation_title" content="The Confidence Cost of Pairwise Distribution Learning">
+<meta name="citation_author" content="Pahan Dewasurendra">
+<meta name="citation_author_institution" content="Johns Hopkins University">
+<meta name="citation_publication_date" content="2026/07/30">
+<meta name="citation_online_date" content="2026/07/30">
+<meta name="citation_pdf_url" content="https://andotheror.github.io/pdf/the-confidence-cost-of-pairwise-distribution-learning.pdf">
+<meta name="citation_abstract_html_url" content="https://andotheror.github.io/p/the-confidence-cost-of-pairwise-distribution-learning.html">
+<meta name="citation_technical_report_institution" content="Johns Hopkins University">
+<meta name="description" content="Pairwise conditional access to an unknown distribution returns a draw from the distribution restricted to any requested pair. At constant confidence, this weak oracle is as sample-efficient for labeled total-variation learning as ordinary sampling, up to constants. We show that this equivalence fail">
+<meta name="citation_keywords" content="pairwise comparisons;distribution learning;high-probability bounds; confidence;sample complexity;preference learning">
+<script>window.MathJax={tex:{inlineMath:[["$","$"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>body{max-width:52em;margin:2.5em auto;padding:0 1.2em;
+font:16px/1.65 Georgia,'Times New Roman',serif;color:#1a1a1a;background:#fff}
+h1{font-size:1.7em;margin-bottom:.15em}h2{font-size:1.12em;margin:2em 0 .3em}
+a{color:#0b4fa0}.sub{color:#555;font-size:.95em;margin-top:0}
+.abs{color:#222;margin:.4em 0 .5em}.meta{font-size:.9em;color:#555}
+.kw{font-size:.88em;color:#444;font-style:italic}
+ol{padding-left:1.4em}li{margin-bottom:1.9em}
+hr{border:0;border-top:1px solid #ddd;margin:2.2em 0}
+code{background:#f4f4f4;padding:.1em .3em}</style></head><body>
+<p class="meta"><a href="https://andotheror.github.io/">&larr; All papers</a></p>
+<h1>The Confidence Cost of Pairwise Distribution Learning</h1>
+<p class="sub">Pahan Dewasurendra, Johns Hopkins University</p>
+<h2>Abstract</h2>
+<p class="abs">Pairwise conditional access to an unknown distribution returns a draw from the distribution restricted to any requested pair. At constant confidence, this weak oracle is as sample-efficient for labeled total-variation learning as ordinary sampling, up to constants. We show that this equivalence fails at high confidence. For a distribution on $n$ labels, accuracy $\varepsilon$, and failure probability $\delta$, we prove the exact minimax query complexity $\Theta \left(\frac{n\log(1/\delta)}{\varepsilon^2}\right).$ The corresponding ordinary-sampling complexity is $\Theta((n+\log(1/\delta))/\varepsilon^2)$. Thus confidence amplification costs up to a factor $n$ under pairwise access. The upper bound reuses one trajectory of a pairwise-winner Markov chain whose stationary law is the target. Although its worst-case relaxation time is linear in $n$, we prove that its empirical distribution has the i.i.d.-scale stationary risk $O(\sqrt{n/T})$. The proof compares its conductances with a minimum-mass graph. After sorting the target probabilities, this graph has an explicit Helmert eigensystem, and a capped-mass Green-function bound telescopes without any minimum-mass or dynamic-range assumption. A geometric median of independent trajectories gives the high-confidence result. The lower bound uses a heavy label and uniform light labels. Every adaptive pair query then carries only $O(\varepsilon^2/n)$ KL information, which makes the multiplicative confidence cost unavoidable.</p>
+<p class="kw">Keywords: pairwise comparisons; distribution learning; high-probability bounds;  confidence; sample complexity; preference learning</p>
+<p class="meta"><a href="https://andotheror.github.io/pdf/the-confidence-cost-of-pairwise-distribution-learning.pdf">Full text (PDF)</a> &middot; <a href="https://github.com/andotheror/pairwise-distribution-confidence-cost">source repository</a> &middot; <a href="https://doi.org/10.5281/zenodo.21706057">doi:10.5281/zenodo.21706057</a></p>
+</body></html>

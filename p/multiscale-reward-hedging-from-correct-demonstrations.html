@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Multiscale Reward Hedging from Correct Demonstrations</title>
+<meta name="citation_title" content="Multiscale Reward Hedging from Correct Demonstrations">
+<meta name="citation_author" content="Pahan Dewasurendra">
+<meta name="citation_author_institution" content="Johns Hopkins University">
+<meta name="citation_publication_date" content="2026/07/31">
+<meta name="citation_online_date" content="2026/07/31">
+<meta name="citation_pdf_url" content="https://andotheror.github.io/pdf/multiscale-reward-hedging-from-correct-demonstrations.pdf">
+<meta name="citation_abstract_html_url" content="https://andotheror.github.io/p/multiscale-reward-hedging-from-correct-demonstrations.html">
+<meta name="citation_technical_report_institution" content="Johns Hopkins University">
+<meta name="description" content="Learning from correct demonstrations is harder than supervised learning when many answers are correct: after predicting, the learner sees one valid answer but not whether its own answer was valid, nor any reward. Existing reward-hedging guarantees consequently assume a finite reward class. We give t">
+<meta name="citation_keywords" content="imitation learning;learning from demonstrations;reward ambiguity; multiscale hedging;inverse reinforcement learning;optimality tests">
+<script>window.MathJax={tex:{inlineMath:[["$","$"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>body{max-width:52em;margin:2.5em auto;padding:0 1.2em;
+font:16px/1.65 Georgia,'Times New Roman',serif;color:#1a1a1a;background:#fff}
+h1{font-size:1.7em;margin-bottom:.15em}h2{font-size:1.12em;margin:2em 0 .3em}
+a{color:#0b4fa0}.sub{color:#555;font-size:.95em;margin-top:0}
+.abs{color:#222;margin:.4em 0 .5em}.meta{font-size:.9em;color:#555}
+.kw{font-size:.88em;color:#444;font-style:italic}
+ol{padding-left:1.4em}li{margin-bottom:1.9em}
+hr{border:0;border-top:1px solid #ddd;margin:2.2em 0}
+code{background:#f4f4f4;padding:.1em .3em}</style></head><body>
+<p class="meta"><a href="https://andotheror.github.io/">&larr; All papers</a></p>
+<h1>Multiscale Reward Hedging from Correct Demonstrations</h1>
+<p class="sub">Pahan Dewasurendra, Johns Hopkins University</p>
+<h2>Abstract</h2>
+<p class="abs">Learning from correct demonstrations is harder than supervised learning when many answers are correct: after predicting, the learner sees one valid answer but not whether its own answer was valid, nor any reward. Existing reward-hedging guarantees consequently assume a finite reward class. We give the first horizon-free guarantee for continuous classes. The key is to hedge in one shared vote over tolerant optimality tests at every accuracy scale. A target reward has one surviving proxy per scale, and a prediction with gap above that scale doubles the proxy. This yields the simultaneous tail bound $|\{t:\ell_t&gt;2^{-j}\}|\leq \log_2\mathcal N(\mathcal G,2^{-j-1})+j,$ where $\mathcal G$ is the class of optimality-gap functions. Integrating the tails gives cumulative hidden gap bounded by a metric-entropy integral, independently of the number of rounds. Polynomial entropy $(A/\epsilon)^d$ gives $O(d\log A)$ total gap and a fast $O(d/m)$ statistical rate. For bounded linear contextual recommendation, the result is $O(d)$ regret for arbitrary compact menus. This is the first polynomial finite bound without structural restrictions on the menus, at the price of improper prediction. Although the general vote can be expensive, it is exactly polynomial-time for one-dimensional Lipschitz parameter curves. Fixed-radius rank-two recommendation takes $O(KT^2)$ time for menus of size $K$. We also prove an $\Omega(d)$ lower bound, low-rank and bounded ReLU-network corollaries, and a robust theorem that adds only the demonstrator&#x27;s cumulative suboptimality. A reproducible adaptive stress test illustrates the predicted scale adaptation. After factorization, an exact MovieLens audit runs in 1.7 CPU seconds across ten users and improves mean latent gap over both a demonstrated-rating policy and a proper online baseline. The learner uses only action demonstrations and never observes a reward or a loss.</p>
+<p class="kw">Keywords: imitation learning; learning from demonstrations; reward ambiguity;  multiscale hedging; inverse reinforcement learning; optimality tests</p>
+<p class="meta"><a href="https://andotheror.github.io/pdf/multiscale-reward-hedging-from-correct-demonstrations.pdf">Full text (PDF)</a> &middot; <a href="https://github.com/andotheror/multiscale-reward-hedging">source repository</a> &middot; <a href="https://arxiv.org/abs/2608.06825">arXiv:2608.06825</a> &middot; <a href="https://doi.org/10.5281/zenodo.21711967">doi:10.5281/zenodo.21711967</a></p>
+</body></html>

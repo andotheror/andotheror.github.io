@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Quadratic Cost of Replicable Distribution Estimation</title>
+<meta name="citation_title" content="The Quadratic Cost of Replicable Distribution Estimation">
+<meta name="citation_author" content="Pahan Dewasurendra">
+<meta name="citation_author_institution" content="Johns Hopkins University">
+<meta name="citation_publication_date" content="2026/08/13">
+<meta name="citation_online_date" content="2026/08/13">
+<meta name="citation_pdf_url" content="https://andotheror.github.io/pdf/the-quadratic-cost-of-replicable-distribution-estimation.pdf">
+<meta name="citation_abstract_html_url" content="https://andotheror.github.io/p/the-quadratic-cost-of-replicable-distribution-estimation.html">
+<meta name="citation_technical_report_institution" content="Johns Hopkins University">
+<meta name="description" content="Estimating a distribution on $k$ symbols to expected total-variation error $\alpha$ needs $\Theta(k/\alpha^2)$ samples. Under algorithmic replicability, the best known upper bound is $O(k^2\log(1/\rho)/(\alpha^2\rho^2))$. Whether the quadratic alphabet dependence is necessary was left open by Bun et">
+<meta name="citation_keywords" content="replicability;distribution estimation;sample complexity lower bounds; total variation distance;reproducibility;algorithmic stability">
+<script>window.MathJax={tex:{inlineMath:[["$","$"]]},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>body{max-width:52em;margin:2.5em auto;padding:0 1.2em;
+font:16px/1.65 Georgia,'Times New Roman',serif;color:#1a1a1a;background:#fff}
+h1{font-size:1.7em;margin-bottom:.15em}h2{font-size:1.12em;margin:2em 0 .3em}
+a{color:#0b4fa0}.sub{color:#555;font-size:.95em;margin-top:0}
+.abs{color:#222;margin:.4em 0 .5em}.meta{font-size:.9em;color:#555}
+.kw{font-size:.88em;color:#444;font-style:italic}
+ol{padding-left:1.4em}li{margin-bottom:1.9em}
+hr{border:0;border-top:1px solid #ddd;margin:2.2em 0}
+code{background:#f4f4f4;padding:.1em .3em}</style></head><body>
+<p class="meta"><a href="https://andotheror.github.io/">&larr; All papers</a></p>
+<h1>The Quadratic Cost of Replicable Distribution Estimation</h1>
+<p class="sub">Pahan Dewasurendra, Johns Hopkins University</p>
+<h2>Abstract</h2>
+<p class="abs">Estimating a distribution on $k$ symbols to expected total-variation error $\alpha$ needs $\Theta(k/\alpha^2)$ samples. Under algorithmic replicability, the best known upper bound is $O(k^2\log(1/\rho)/(\alpha^2\rho^2))$. Whether the quadratic alphabet dependence is necessary was left open by Bun et al. We prove that it is. Every $\rho$-replicable estimator with expected error at most $\alpha$ requires $\Omega \left(\frac{k^2}{\alpha^2\rho^2}\right)$ samples, for all sufficiently small universal $\alpha$ and $\rho$. The lower bound holds for arbitrary randomized estimators and matches every polynomial dependence in the known upper bound. Our proof introduces an average-distortion partition principle. Fixing the public randomness turns a replicable estimator into canonical output cells. Expected accuracy does not bound every cell, so bounded-diameter partition arguments do not apply. Instead, we show that cells with low average distortion cover constant measure, that each such cell has exponentially small measure, and that Gaussian-profile isoperimetry forces total boundary $\Omega(\sqrt{k})$. The hard instances form a smooth toroidal family of categorical distributions. Nearby parameters generate statistically indistinguishable samples at scale $\sqrt{k}/(\alpha\sqrt m)$. Thickening all canonical cells to this scale converts their boundary into nonreplicability, yielding the result by coarea.</p>
+<p class="kw">Keywords: replicability; distribution estimation; sample complexity lower bounds;  total variation distance; reproducibility; algorithmic stability</p>
+<p class="meta"><a href="https://andotheror.github.io/pdf/the-quadratic-cost-of-replicable-distribution-estimation.pdf">Full text (PDF)</a> &middot; <a href="https://github.com/andotheror/quadratic-cost-replicable-distribution-estimation">source repository</a></p>
+</body></html>
